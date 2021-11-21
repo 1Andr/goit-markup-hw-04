@@ -183,6 +183,14 @@ body {
 
 .hero {
   background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   border: 1px solid #ececec;
@@ -227,6 +235,7 @@ body {
 
 .strengths-list {
   display: flex;
+  margin-top: 30px;
 }
 
 .strengths-item {
@@ -237,6 +246,24 @@ body {
   margin-right: 0;
 }
 
+.strengths-icon-list {
+  display: flex;
+}
+
+.strengths-icon-item {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.strengths-icon-list :last-child {
+  margin-right: 0;
+}
+
 .strengths-subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -244,6 +271,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--third-title-color);
+  /* margin-bottom: 10px; */
 }
 
 .strengths-text {
@@ -326,7 +354,43 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--speciality-text-color);
-  padding-bottom: 30px;
+  margin-bottom: 16px;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.team-social-item {
+  height: 44px;
+  width: 44px;
+}
+
+.team-social-item + .team-social-item {
+  margin-left: 10px;
+}
+
+.team-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #afb1b8;
+}
+
+.team-social-icon {
+  fill: currentColor;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 /*---------------PORTFOLIO----------------*/
